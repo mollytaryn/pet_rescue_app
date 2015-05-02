@@ -1,0 +1,19 @@
+{
+  "name": "tail_fail",
+  "version": "1.0.0",
+  "description": "An image-feed style app, designed to help fosters and rescue organizations connect with adopters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mollytaryn/tail_fail.git"
+  },
+  "author": "Molly Black <mollytaryn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mollytaryn/tail_fail/issues"
+  },
+  "homepage": "https://github.com/mollytaryn/tail_fail"
+}

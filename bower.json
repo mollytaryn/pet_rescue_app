@@ -1,0 +1,17 @@
+{
+  "name": "tail_fail",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mollytaryn/tail_fail",
+  "authors": [
+    "mollytaryn <mollytaryn@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
