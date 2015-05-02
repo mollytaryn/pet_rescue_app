@@ -1,0 +1,42 @@
+.container {
+  text-align: center;
+}
+
+.profile_image {
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+}
+
+.name {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 32px;
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  border-top: 6px solid #EE2A7B;
+  padding: 6px 10px 14px 10px;
+  height: 30px;
+  width: 160px;
+  background-color: white;
+}
+
+.bio {
+  font-family: Vidaloka;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.location {
+  font-family: Vidaloka;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
