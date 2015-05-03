@@ -5,20 +5,22 @@
   text-align: center;
 }
 
+.profile {
+  margin-bottom: -45px;
+}
+
 .profile_image {
   width: 100%;
   max-width: 500px;
-  height: 200px;
 }
 
 .name {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 32px;
-  position: absolute;
+  font-size: 35px;
+  position: relative;
   left: 50%;
-  top: 34%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -90%);
   border-top: 6px solid #EE2A7B;
   padding: 6px 10px 14px 10px;
   height: 30px;
@@ -28,19 +30,17 @@
 
 .location {
   font-family: Vidaloka;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 2px;
   padding-bottom: 10px;
 }
 
 .bio {
   font-family: "Times New Roman";
-  font-size: 12px;
-  position: absolute;
-  left: 50%;
-  top: 56%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  font-size: 14px;
+  position: relative;
+  left: 18%;
+  width: 80%;
   max-width: 500px;
   text-align: left;
   border-top: 1px solid #808285;
@@ -67,4 +67,17 @@
   text-align: center;
   max-width: 500px;
   border-bottom: 1px solid #808285;
+}
+
+@media (max-width: 1100px) {
+  .bio {
+    font-family: "Times New Roman";
+    font-size: 12px;
+    position: relative;
+    left: 8%;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    border-top: 1px solid #808285;
+  }
 }
