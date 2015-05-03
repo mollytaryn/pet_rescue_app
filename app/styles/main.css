@@ -1,3 +1,6 @@
+@import '../../bower_components/skeleton/css/normalize.css';
+@import '../../bower_components/skeleton/css/skeleton.css';
+
 .container {
   text-align: center;
 }
@@ -39,4 +42,23 @@
   font-family: Vidaloka;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+.feed-image {
+  position: relative;
+  width: 100%;
+  /*max-width: 500px;*/
+  border-bottom: 8px solid #EE2A7B;
+}
+
+.pet-details {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.default-feed {
+  text-align: center;
+  max-width: 500px;
+  border-bottom: 1px solid #808285;
 }
