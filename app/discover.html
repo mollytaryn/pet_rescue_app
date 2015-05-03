@@ -49,13 +49,15 @@
       </div>
     </form>
   </div>
-  <div class="row" ng-repeat= "(id, pet) in petsData">
+  <div class="row" ng-repeat="(id, pet) in petsData">
     <div class="default-feed six columns">
-      <div>
+      <a href="/#/pet_profile/{{id}}">
         <img src="{{pet.imageURL}}" class="feed-image">
-      </div>
+        <div class="pet-details">
+          <h2 class="name">{{pet.petName}}</h2>
+        </div>
+      </a>
       <div class="pet-details">
-        <h2 class="name">{{pet.petName}}</h2>
         <h5 class="location">{{pet.petType}} | {{pet.sex}} | {{pet.city}}, {{pet.state}}</h5>
         <button>FOLLOW THIS DOG</button>
       </div>

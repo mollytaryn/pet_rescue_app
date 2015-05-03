@@ -4,7 +4,6 @@ angular
 
 function PetController($location, petFactory, $scope, $http, TFURL) {
   $scope.petsData = [];
-  // petFactory.findAllPets(processData);
     $http
       .get(TFURL + 'read/getPetFeed')
       .success(function(data) {
