@@ -5,16 +5,17 @@
       <h2 class="name">{{pets.pet.petName}}</h2>
       <h2 class="location">{{pets.pet.petType}} | {{pets.pet.sex}} | {{pets.pet.city}}, {{pets.pet.state}}</h3>
       <div class="bio">
-        <p>{{profile.pet.description}}</p>
+        <p>{{pets.pet.description}}</p>
         <div class = "comments">
           <button class="comment-button" ng-click="addComment = !addComment">COMMENT</button>
           <form class="commentForm" ng-submit="pets.addNewComment(id)">
             <input type="text" ng-show="addComment" ng-model="pets.newComment.comment">
             <input type="submit" ng-show="addComment">
           </form>
-          <ul>
-            <li ng-repeat="petComment in pets.petComments">{{petComment.comment}}</li>
-          </ul>
+          <div class="commentFeed" ng-repeat="petComment in pets.petComments">
+            <div><span class="commenter">{{petComment.firstName}} {{petComment.lastName}}  </span><span class="timestamp">{{petComment.timestamp}}</span></div>
+            <div class="comment">{{petComment.comment}}</div>
+          </div>
         </div>
       </div>
     <div class = "footer">
