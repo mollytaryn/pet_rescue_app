@@ -25,6 +25,7 @@
   padding: 6px 10px 14px 10px;
   height: 30px;
   width: 160px;
+  margin-bottom: -20px;
   background-color: white;
 }
 
@@ -44,6 +45,7 @@
   max-width: 500px;
   text-align: left;
   border-top: 1px solid #808285;
+  padding-top: 25px;
 }
 
 .status_updates {
