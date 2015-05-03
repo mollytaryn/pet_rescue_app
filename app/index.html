@@ -17,8 +17,14 @@
     <![endif]-->
 
     <div class="container" ng-app="tailfail">
-      <div class="headerBar">
-        <h1>tailfail<h1>
+      <div class="row">
+        <div class="headerBar sixteen columns offset-by-three">
+          <div class="feed_header offset-by-six">
+            <button class="three columns feed_button filter" ng-click="filter = !filter">filter</button>
+            <img class="two columns header-logo" src='./images/TF_Logo.png'>
+            <button class="three columns feed_button following">following</button>
+          </div>
+        </div>
       </div>
       <div ng-show="user"></div>
       <div ng-view></div>
