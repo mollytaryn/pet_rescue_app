@@ -106,6 +106,26 @@ a:hover {
   transition: 0.7s, linear;
 }
 
+.commenter {
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+  font-size: 10px;
+  font-weight: 700;
+  color: #EE2A7B;
+}
+
+.timestamp {
+  font-family: "Times New Roman";
+  font-size: 10px;
+}
+
+.comment {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1100px) {
   .bio {
     font-family: "Times New Roman";

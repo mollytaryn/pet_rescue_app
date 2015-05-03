@@ -24,24 +24,13 @@ function petFactory($http, $route, TFURL) {
   };
 
   pets.addNewComment = function (id, data, cb) {
-    var req = {
-      method: 'POST',
-      url: TFURL + 'create/addPetComment',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      data: {'petId': id, 'comment': data}
-    };
 
-    $http(req).success(function (res) {
-      console.log(res);
-      cb(res);
-    });
-      // .post(TFURL + 'create/addPetComment', {petId: id, comment: data})
-      // .success(function (res) {
-      //   console.log(res);
-      //   cb(res);
-      // });
+    $http
+      .post(TFURL + 'create/addPetComment', {petId: id, comment: data.comment})
+      .success(function (res) {
+        console.log(res);
+        cb(res);
+      });
   };
 
   pets.findAllPets = function(cb) {
