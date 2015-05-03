@@ -8,7 +8,7 @@
         <p>{{profile.pet.description}}</p>
         <div class = "status_updates">
           <ul>
-            <li ng-repeat="(id, petComment) in pets.petComments.data">{{pets.petComment.comment}}</li>
+            <li ng-repeat="petComment in pets.petComments">{{petComment.comment}}</li>
           </ul>
         </div>
       </div>
