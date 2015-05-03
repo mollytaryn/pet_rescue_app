@@ -2,6 +2,8 @@ angular
   .module('tailfail')
   .controller('PetController', PetController);
 
-// function PetController($http, $location, $rootScope, $route, $scope, petFactory) {
-//
-// }
+function PetController($http, $rootScope, petFactory) {
+  petFactory.findPet(function (pets) {
+    vm.data = pets;
+  });
+}
