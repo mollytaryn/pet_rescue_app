@@ -8,7 +8,9 @@ body {
 .headerBar {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  /*max-width: 600px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -73,6 +75,14 @@ body {
 
 .comments {
   border-top: 1px solid #808285;
+}
+
+.comment-button {
+  border: white;
+}
+
+.comment-button:hover {
+  background-color: #DEDD31;
 }
 
 .feed-image {

@@ -7,7 +7,7 @@
       <div class="bio">
         <p>{{profile.pet.description}}</p>
         <div class = "comments">
-          <button ng-click="addComment = !addComment">ADD A NEW COMMENT</button>
+          <button class="comment-button" ng-click="addComment = !addComment">COMMENT</button>
           <form class="commentForm" ng-submit="pets.addNewComment(id)">
             <input type="text" ng-show="addComment" ng-model="pets.newComment.comment">
             <input type="submit" ng-show="addComment">
