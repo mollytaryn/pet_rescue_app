@@ -7,10 +7,10 @@
       <div class="bio">
         <p>{{pets.pet.description}}</p>
         <div class = "comments">
-          <button class="comment-button" ng-click="addComment = !addComment">COMMENT</button>
+          <button class="comment-button" ng-click="addComment = !addComment">COMMENT</button><button class="comment-button">LIKE</button><button class="comment-button">FOLLOW</button>
           <form class="commentForm" ng-submit="pets.addNewComment(id)">
             <input type="text" ng-show="addComment" ng-model="pets.newComment.comment">
-            <input type="submit" ng-show="addComment">
+            <input type="submit" class="comment-button" ng-show="addComment" value="+">
           </form>
           <div class="commentFeed" ng-repeat="petComment in pets.petComments">
             <div><span class="commenter">{{petComment.firstName}} {{petComment.lastName}}  </span><span class="timestamp">{{petComment.timestamp}}</span></div>
