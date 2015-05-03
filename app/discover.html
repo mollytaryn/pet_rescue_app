@@ -1,8 +1,7 @@
 <div class="row">
   <div class="feed_header">
-    <button ng-click="filter = !filter">filter-hamburger</button>
-    <button>view-type</button>
-    <button>notifications</button>
+    <button class="three columns" ng-click="filter = !filter">filter</button>
+    <button class="three columns">notifications</button>
   </div>
   <div ng-show="filter" class="filter_modal">
     <form>
@@ -50,7 +49,7 @@
     </form>
   </div>
   <div class="row" ng-repeat="(id, pet) in petsData">
-    <div class="default-feed six columns">
+    <div class="default-feed eight columns">
       <a href="/#/pet_profile/{{id}}">
         <img src="{{pet.imageURL}}" class="feed-image">
         <div class="pet-details">
