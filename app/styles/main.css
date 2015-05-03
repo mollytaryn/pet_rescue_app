@@ -23,8 +23,15 @@
   background-color: white;
 }
 
-.bio {
+.location {
   font-family: Vidaloka;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.bio {
+  font-family: "Times New Roman";
   font-size: 12px;
   position: absolute;
   left: 50%;
@@ -33,10 +40,9 @@
   width: 90%;
   max-width: 500px;
   text-align: left;
+  border-top: 1px solid #808285;
 }
 
-.location {
-  font-family: Vidaloka;
-  font-size: 12px;
-  letter-spacing: 2px;
+.status_updates {
+  border-top: 1px solid #808285;
 }
