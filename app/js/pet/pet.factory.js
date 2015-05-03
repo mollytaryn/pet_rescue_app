@@ -14,6 +14,15 @@ function petFactory($http, $route, TFURL) {
       });
   };
 
+  pets.findPetComments = function(id, cb) {
+    $http
+      .get(TFURL + 'read/getPetComments/' + id)
+      .success(function (data) {
+        cb(data);
+        console.log(data);
+      });
+  };
+
   pets.findAllPets = function(cb) {
     $http
       .get(TFURL + 'read/getPetFeed')
