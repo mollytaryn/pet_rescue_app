@@ -2,20 +2,21 @@ angular
   .module('tailfail')
   .factory('petFactory', petFactory);
 
-function petFactory($http, $route, TFURL, $q) {
+function petFactory($http, $route, TFURL) {
   var pets = {};
 
-  pets.findAllPets = function(cb) {
+  pets.findPet = function(id, cb) {
     $http
-      .get(TFURL + 'read/getPetFeed')
-      .success(function(data) {
+      .get(TFURL + 'read/getPetInfo/' + id)
+      .success(function (data) {
+        console.log(data);
         cb(data);
       });
   };
 
-  pets.findPet = function(cb) {
+  pets.findAllPets = function(cb) {
     $http
-      .get(TFURL + 'read/getPetInfo/id')
+      .get(TFURL + 'read/getPetFeed')
       .success(function(data) {
         cb(data);
       });

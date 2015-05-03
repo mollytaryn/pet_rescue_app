@@ -1,13 +1,11 @@
 <div class = "container">
   <div class = "row">
     <div class="profile">
-      <img src="http://i.livescience.com/images/i/000/004/306/original/080421-llm-dog-mouth-02.jpg" class = "profile_image">
-      <h2 class="name">PABLO</h2>
-      <h2 class="location">DOG | MALE | NASHVILLE, TN</h3>
+      <img src="{{pets.pet.imageURL}}" class = "profile_image">
+      <h2 class="name">{{pets.pet.petName}}</h2>
+      <h2 class="location">{{pets.pet.petType}} | {{pets.pet.sex}} | {{pets.pet.city}}, {{pets.pet.state}}</h3>
       <div class="bio">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p>{{profile.pet.description}}</p>
         <div class = "status_updates">
           <ul>
             <li>Status Updates</li>

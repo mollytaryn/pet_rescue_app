@@ -51,7 +51,7 @@
   </div>
   <div class="row" ng-repeat="(id, pet) in pets.data">
     <div class="default-feed six columns">
-      <a href="/#/pet_profile/{{id}}">
+      <a href="#/pet_profile/{{pet.id}}">
         <img src="{{pet.imageURL}}" class="feed-image">
         <div class="pet-details">
           <h2 class="name">{{pet.petName}}</h2>

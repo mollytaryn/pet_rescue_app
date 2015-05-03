@@ -9,9 +9,9 @@ function petConfig($routeProvider) {
       controller: 'PetController',
       controllerAs: 'pets'
     })
-    .when('/pet_profile', {
+    .when('/pet_profile/:uuid', {
       templateUrl: 'pet_profile.html',
-      controller: 'PetController',
+      controller: 'PetProfileController',
       controllerAs: 'pets'
     })
     .when('/pet_camera', {
