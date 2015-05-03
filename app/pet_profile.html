@@ -6,7 +6,12 @@
       <h2 class="location">{{pets.pet.petType}} | {{pets.pet.sex}} | {{pets.pet.city}}, {{pets.pet.state}}</h3>
       <div class="bio">
         <p>{{profile.pet.description}}</p>
-        <div class = "status_updates">
+        <div class = "comments">
+          <button ng-click="addComment = !addComment">ADD A NEW COMMENT</button>
+          <form class="commentForm" ng-submit="pets.addNewComment(id)">
+            <input type="text" ng-show="addComment" ng-model="pets.newComment.comment">
+            <input type="submit" ng-show="addComment">
+          </form>
           <ul>
             <li ng-repeat="petComment in pets.petComments">{{petComment.comment}}</li>
           </ul>

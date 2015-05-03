@@ -13,4 +13,8 @@ function PetProfileController($routeParams, petFactory) {
   petFactory.findPetComments(id, function (petComments) {
     vm.petComments = petComments;
   });
+
+  vm.addNewComment = function() {
+    petFactory.addNewComment(id, vm.newComment, function(res) {});
+  };
 }
